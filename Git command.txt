@@ -1,0 +1,238 @@
+in Git Bash Terminal
+
+git --version
+
+git config --global user.name "name"              add user_name
+git config --global user.email "email address"   add email_address
+git config --list           check the user name/email added
+
+
+git help <verb like config>
+git config --help
+
+
+cd directory_name
+
+
+ls
+
+ls -la          list all files/folders
+
+
+
+git init      in the current folder, create .git folder
+
+ls -la       list all to check .git is created
+
+
+
+rm -rf .git      remove .git, no longer track changes
+
+ls -la          list all, check .git is removed            
+
+git status      all files moved to untracked
+
+
+after re -rf .git, need to git init  again
+
+
+
+
+touch .gitignore      create a file, open it in IDE, type file names you want .git to ignore
+
+git status      check .gitignore is created, file_name typed above in it has been moved inside
+
+
+
+git add .gitignore          add .gitignore to staging area
+
+git status      
+
+
+
+
+git add -A          add all files to staging area
+
+git status
+
+
+
+git reset file_name           to remove file from staging area
+
+git status      to check that file is removed
+
+
+
+git reset       this will remove all files from staging area
+
+git status
+
+
+
+
+git add -A
+
+git status
+
+git commit -m "message"        commit all files with message
+
+git status
+
+git log      show log of committing date and author, message
+
+
+
+
+git clone URL where_to_clone
+
+git clone URL .        .means current directory_name
+
+git clone https://github.com/xinpds/web50.git .
+
+
+
+
+Viewing Info about the Remote Repository
+
+git remote -v         show origin URL (fetch)  (push)
+
+git branch -a         show all branches like master, remote, star indicate current branch worked on
+
+
+
+git diff          show diff btw local and remove files
+
+git stutas
+
+git add -A
+
+git commit -m "message"
+
+
+
+
+git remote add origin URL      link to remote GitHub URL
+
+
+
+
+git pull origin master       if current branch is master
+
+git push origin master       if current branch is master
+or 
+git push -u origin master       if current branch is master, push all to remote
+
+
+
+git pull origin branch_name       if current branch is branch_name
+
+git push origin branch_name       if current branch is branch_name
+or 
+git push -u origin branch_name    if current branch is branch_name, push all to remote branch
+
+
+
+Creat a Branch for Desired Feature
+
+git branch branch_name         this will create a branch
+
+git branch           show all branches, star indicate current branch worked on
+
+git checkout branch_name        switch to a branch
+
+git branch         check the star moved to the switched_to branch
+
+git status
+
+git add -A
+
+git commit -m "message"
+
+
+
+
+
+After Commit, Push branch to Remote
+
+git push -u origin current_branch_name
+
+git branch -a        list all branches, this will show local and remote master and branches
+
+
+
+
+
+
+Merge a Branch
+
+git checkout master         switch to master branch
+
+git pull origin master      pull from remote to local
+
+git branch --merged     show branches that can be merged, current branch is indicated with a star
+
+git merge branch_name   this will merge the branch_name to current branch
+
+git branch --merged     check that the branch_name appears in the list
+
+
+git push origin master    after merged above to master, push local master branch to remote master branch
+
+    
+
+
+
+Delete a Branch
+
+git branch -d branch_name        delete the local branch
+
+git branch -a       list all branches, see that local one is gone
+
+git push origin --delete branch_name      delete the remote branch_name
+
+git branch -a     list all branches, see that remote branch is gone
+
+
+
+
+
+
+How to Push code to GitHub
+---------------------------------------------------------------
+create a new repository, give it a name, create, copy the URL
+
+pwd   show Present Working Directory
+
+cd desired_directory
+
+ls  or ls -la
+
+git init        create a .git folder for tracking
+
+git add .       add all files in current folder to staging area
+
+git status       show all files added
+
+git commit -m "message"
+
+
+
+git remote add origin URL      link to remote GitHub URL
+
+git push -u origin master      files added to GitHub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

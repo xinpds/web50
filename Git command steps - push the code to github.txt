@@ -1,0 +1,659 @@
+In Git Bash Terminal
+
+jason@DESKTOP-DV5GDCV MINGW64 ~
+$ git --version
+git version 2.30.1.windows.1
+
+jason@DESKTOP-DV5GDCV MINGW64 ~
+$ git config --global user.name "xinpds"
+
+jason@DESKTOP-DV5GDCV MINGW64 ~
+$ git config --global user.email "xinpds@gmail.com"
+
+jason@DESKTOP-DV5GDCV MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=xinpds
+user.email=xinpds@gmail.com
+
+jason@DESKTOP-DV5GDCV MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+'NCH Software Suite'/
+ NTUSER.DAT
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ company.db
+ hwid
+ myFirstJupyterfile.ipynb
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ seaborn-data/
+ source/
+
+
+
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 ~
+$ git init
+Initialized empty Git repository in C:/Users/jason/.git/
+
+jason@DESKTOP-DV5GDCV MINGW64 ~ (master)
+$ rm -rf .git
+
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 ~
+$ cd Documents/
+
+jason@DESKTOP-DV5GDCV MINGW64 ~/Documents
+$ cd ..
+
+jason@DESKTOP-DV5GDCV MINGW64 ~
+$ cd ..
+
+jason@DESKTOP-DV5GDCV MINGW64 /c/Users
+$ cd f:
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f
+$ ls
+'$RECYCLE.BIN'/
+'2016 12 16  option quote price.xls'
+'BaiduYunDownload book'/
+'Budgetting  from 2011 11 12.xlsx'
+'Caustic soda comparison.xls'
+'Diet log.xlsx'
+ Documents/
+'Download movie'/
+'GPS maps'/
+ HDDActive.bat
+ HDDActive.txt
+ HDDActive_write_word_to_file.bat
+'HSBC bank account opening  XL1643990.docx'
+ KeepHDDActive.js
+ KeepHDDActive.txt
+ KeepHDD_on.txt
+ KeepHDD_on.vbs
+'Local Disk (E)'/
+'Local Disk (F)'/
+ Movie/
+'Movies - Vicki'/
+'My Documents - HP computer'/
+'My documents'/
+ Qvod/
+'Seagate New'/
+'Shopping invoice receipt'/
+'System Volume Information'/
+'XIN photo (D)'/
+'Xin (G)'/
+'YouTube download'/
+'Youtube video upload'/
+ ascii_dir
+'computer systerm, wireless network card.xls'
+'eMule books'/
+'lawn cutting, haircut, shaving foam.xls'
+ songs/
+ study/
+'weight monitoring  since 2013 09 03 new.xls'
+'weight monitoring  since 2013 09 03.xls'
+ 照片/
+
+jason@DESKTOP-DV5GDCV MINGW64 /f
+$ cd 'Local Disk (E)'/
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)
+$ cd software\ downloaded/Computer\ Science/Harvard\ CS50\'s\ Web\ Programming\ with\ Python\ and\ JavaScript/Project\ 0/s
+sample/     search/     search.zip  styles.css
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)
+$ cd software\ downloaded/Computer\ Science/Harvard\ CS50\'s\ Web\ Programming\ with\ Python\ and\ JavaScript/Project\ 0/search
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls
+favicon.ico     index.html   search_advanced.html  styles.css
+googlelogo.png  layout.html  search_image.html
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=xinpds
+user.email=xinpds@gmail.com
+gui.recentrepo=F:/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls
+favicon.ico     index.html   search_advanced.html  styles.css
+googlelogo.png  layout.html  search_image.html
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls -la
+total 68
+drwxr-xr-x 1 jason 197609     0 Feb 12 22:43 ./
+drwxr-xr-x 1 jason 197609     0 Jan 15 21:44 ../
+drwxr-xr-x 1 jason 197609     0 Feb 13 09:00 .git/
+-rw-r--r-- 1 jason 197609  5430 Jan 11 11:11 favicon.ico
+-rw-r--r-- 1 jason 197609 13504 Jan 11 11:12 googlelogo.png
+-rw-r--r-- 1 jason 197609  3278 Jan 15 17:35 index.html
+-rw-r--r-- 1 jason 197609   580 Jan 12 17:43 layout.html
+-rw-r--r-- 1 jason 197609 10747 Jan 16 09:08 search_advanced.html
+-rw-r--r-- 1 jason 197609  3772 Jan 15 23:43 search_image.html
+-rw-r--r-- 1 jason 197609  7920 Jan 16 09:03 styles.css
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ rm -rf .git
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search
+$ ls -la
+total 64
+drwxr-xr-x 1 jason 197609     0 Feb 13 09:23 ./
+drwxr-xr-x 1 jason 197609     0 Jan 15 21:44 ../
+-rw-r--r-- 1 jason 197609  5430 Jan 11 11:11 favicon.ico
+-rw-r--r-- 1 jason 197609 13504 Jan 11 11:12 googlelogo.png
+-rw-r--r-- 1 jason 197609  3278 Jan 15 17:35 index.html
+-rw-r--r-- 1 jason 197609   580 Jan 12 17:43 layout.html
+-rw-r--r-- 1 jason 197609 10747 Jan 16 09:08 search_advanced.html
+-rw-r--r-- 1 jason 197609  3772 Jan 15 23:43 search_image.html
+-rw-r--r-- 1 jason 197609  7920 Jan 16 09:03 styles.css
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search
+$ git init
+Initialized empty Git repository in F:/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search/.git/
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls
+favicon.ico     index.html   search_advanced.html  styles.css
+googlelogo.png  layout.html  search_image.html
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls -la
+total 68
+drwxr-xr-x 1 jason 197609     0 Feb 13 09:23 ./
+drwxr-xr-x 1 jason 197609     0 Jan 15 21:44 ../
+drwxr-xr-x 1 jason 197609     0 Feb 13 09:23 .git/
+-rw-r--r-- 1 jason 197609  5430 Jan 11 11:11 favicon.ico
+-rw-r--r-- 1 jason 197609 13504 Jan 11 11:12 googlelogo.png
+-rw-r--r-- 1 jason 197609  3278 Jan 15 17:35 index.html
+-rw-r--r-- 1 jason 197609   580 Jan 12 17:43 layout.html
+-rw-r--r-- 1 jason 197609 10747 Jan 16 09:08 search_advanced.html
+-rw-r--r-- 1 jason 197609  3772 Jan 15 23:43 search_image.html
+-rw-r--r-- 1 jason 197609  7920 Jan 16 09:03 styles.css
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        favicon.ico
+        googlelogo.png
+        index.html
+        layout.html
+        search_advanced.html
+        search_image.html
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git add -A
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in layout.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in search_advanced.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in search_image.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in styles.css.
+The file will have its original line endings in your working directory
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   favicon.ico
+        new file:   googlelogo.png
+        new file:   index.html
+        new file:   layout.html
+        new file:   search_advanced.html
+        new file:   search_image.html
+        new file:   styles.css
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git commit -m "cs50 web"
+[master (root-commit) 128767f] cs50 web
+ 7 files changed, 879 insertions(+)
+ create mode 100644 favicon.ico
+ create mode 100644 googlelogo.png
+ create mode 100644 index.html
+ create mode 100644 layout.html
+ create mode 100644 search_advanced.html
+ create mode 100644 search_image.html
+ create mode 100644 styles.css
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git log
+commit 128767faa943a9b154c67c671f8487be73391d32 (HEAD -> master)
+Author: xinpds <xinpds@gmail.com>
+Date:   Sat Feb 13 09:53:15 2021 +1100
+
+    cs50 web
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ pwd
+/f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls
+favicon.ico     index.html   search_advanced.html  styles.css
+googlelogo.png  layout.html  search_image.html
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git init
+Reinitialized existing Git repository in F:/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search/.git/
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git log
+commit 128767faa943a9b154c67c671f8487be73391d32 (HEAD -> master)
+Author: xinpds <xinpds@gmail.com>
+Date:   Sat Feb 13 09:53:15 2021 +1100
+
+    cs50 web
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git remote add origin https://github.com/me50/xinpds.git
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git push -u origin master
+To https://github.com/me50/xinpds.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/me50/xinpds.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git branch
+* master
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git branch web50/projects/2020/x/search            this create a branch
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git branch
+* master
+  web50/projects/2020/x/search
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git checkout web50/projects/2020/x/search
+Switched to branch 'web50/projects/2020/x/search'
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git branch
+  master
+* web50/projects/2020/x/search
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ ls
+favicon.ico     index.html   search_advanced.html  styles.css
+googlelogo.png  layout.html  search_image.html
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git status
+On branch web50/projects/2020/x/search
+nothing to commit, working tree clean
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git remote add origin https://github.com/me50/xinpds.git
+error: remote origin already exists.
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ ls
+favicon.ico     index.html   search_advanced.html  styles.css
+googlelogo.png  layout.html  search_image.html
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git status
+On branch web50/projects/2020/x/search
+nothing to commit, working tree clean
+
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git checkout master
+Switched to branch 'master'
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git branch
+* master
+  web50/projects/2020/x/search
+
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git branch
+* master
+  web50/projects/2020/x/search
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git remote add origin https://github.com/xinpds/web50.git
+error: remote origin already exists.
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls -la
+total 68
+drwxr-xr-x 1 jason 197609     0 Feb 13 09:23 ./
+drwxr-xr-x 1 jason 197609     0 Jan 15 21:44 ../
+drwxr-xr-x 1 jason 197609     0 Feb 13 21:54 .git/
+-rw-r--r-- 1 jason 197609  5430 Jan 11 11:11 favicon.ico
+-rw-r--r-- 1 jason 197609 13504 Jan 11 11:12 googlelogo.png
+-rw-r--r-- 1 jason 197609  3278 Jan 15 17:35 index.html
+-rw-r--r-- 1 jason 197609   580 Jan 12 17:43 layout.html
+-rw-r--r-- 1 jason 197609 10747 Jan 16 09:08 search_advanced.html
+-rw-r--r-- 1 jason 197609  3772 Jan 15 23:43 search_image.html
+-rw-r--r-- 1 jason 197609  7920 Jan 16 09:03 styles.css
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git remote -v
+origin  https://github.com/me50/xinpds.git (fetch)
+origin  https://github.com/me50/xinpds.git (push)
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git branch -a
+* master
+  web50/projects/2020/x/search
+  remotes/origin/master
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git reset
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls
+favicon.ico     index.html   search_advanced.html  styles.css
+googlelogo.png  layout.html  search_image.html
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls -la
+total 68
+drwxr-xr-x 1 jason 197609     0 Feb 13 09:23 ./
+drwxr-xr-x 1 jason 197609     0 Jan 15 21:44 ../
+drwxr-xr-x 1 jason 197609     0 Feb 13 22:00 .git/
+-rw-r--r-- 1 jason 197609  5430 Jan 11 11:11 favicon.ico
+-rw-r--r-- 1 jason 197609 13504 Jan 11 11:12 googlelogo.png
+-rw-r--r-- 1 jason 197609  3278 Jan 15 17:35 index.html
+-rw-r--r-- 1 jason 197609   580 Jan 12 17:43 layout.html
+-rw-r--r-- 1 jason 197609 10747 Jan 16 09:08 search_advanced.html
+-rw-r--r-- 1 jason 197609  3772 Jan 15 23:43 search_image.html
+-rw-r--r-- 1 jason 197609  7920 Jan 16 09:03 styles.css
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git remote -v
+origin  https://github.com/me50/xinpds.git (fetch)
+origin  https://github.com/me50/xinpds.git (push)
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git log
+commit 128767faa943a9b154c67c671f8487be73391d32 (HEAD -> master, web50/projects/2020/x/search)
+Author: xinpds <xinpds@gmail.com>
+Date:   Sat Feb 13 09:53:15 2021 +1100
+
+    cs50 web
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git branch
+* master
+  web50/projects/2020/x/search
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ ls -la
+total 68
+drwxr-xr-x 1 jason 197609     0 Feb 13 09:23 ./
+drwxr-xr-x 1 jason 197609     0 Jan 15 21:44 ../
+drwxr-xr-x 1 jason 197609     0 Feb 13 22:06 .git/
+-rw-r--r-- 1 jason 197609  5430 Jan 11 11:11 favicon.ico
+-rw-r--r-- 1 jason 197609 13504 Jan 11 11:12 googlelogo.png
+-rw-r--r-- 1 jason 197609  3278 Jan 15 17:35 index.html
+-rw-r--r-- 1 jason 197609   580 Jan 12 17:43 layout.html
+-rw-r--r-- 1 jason 197609 10747 Jan 16 09:08 search_advanced.html
+-rw-r--r-- 1 jason 197609  3772 Jan 15 23:43 search_image.html
+-rw-r--r-- 1 jason 197609  7920 Jan 16 09:03 styles.css
+
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (master)
+$ git checkout web50/projects/2020/x/search
+Switched to branch 'web50/projects/2020/x/search'
+
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git branch
+  master
+* web50/projects/2020/x/search
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git status
+On branch web50/projects/2020/x/search
+nothing to commit, working tree clean
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ ls -la
+total 68
+drwxr-xr-x 1 jason 197609     0 Feb 13 09:23 ./
+drwxr-xr-x 1 jason 197609     0 Jan 15 21:44 ../
+drwxr-xr-x 1 jason 197609     0 Feb 13 22:07 .git/
+-rw-r--r-- 1 jason 197609  5430 Jan 11 11:11 favicon.ico
+-rw-r--r-- 1 jason 197609 13504 Jan 11 11:12 googlelogo.png
+-rw-r--r-- 1 jason 197609  3278 Jan 15 17:35 index.html
+-rw-r--r-- 1 jason 197609   580 Jan 12 17:43 layout.html
+-rw-r--r-- 1 jason 197609 10747 Jan 16 09:08 search_advanced.html
+-rw-r--r-- 1 jason 197609  3772 Jan 15 23:43 search_image.html
+-rw-r--r-- 1 jason 197609  7920 Jan 16 09:03 styles.css
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git push -u origin web50/projects/2020/x/search
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 20.45 KiB | 6.82 MiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'web50/projects/2020/x/search' on GitHub by visiting:
+remote:      https://github.com/me50/xinpds/pull/new/web50/projects/2020/x/search
+remote:
+To https://github.com/me50/xinpds.git
+ * [new branch]      web50/projects/2020/x/search -> web50/projects/2020/x/search
+Branch 'web50/projects/2020/x/search' set up to track remote branch 'web50/projects/2020/x/search' from 'origin'.
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git branch -a
+  master
+* web50/projects/2020/x/search
+  remotes/origin/master
+  remotes/origin/web50/projects/2020/x/search
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git branch
+  master
+* web50/projects/2020/x/search
+
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=xinpds
+user.email=xinpds@gmail.com
+gui.recentrepo=F:/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/me50/xinpds.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.web50/projects/2020/x/search.remote=origin
+branch.web50/projects/2020/x/search.merge=refs/heads/web50/projects/2020/x/search
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git pull origin master
+From https://github.com/me50/xinpds
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+
+
+jason@DESKTOP-DV5GDCV MINGW64 /f/Local Disk (E)/software downloaded/Computer Science/Harvard CS50's Web Programming with Python and JavaScript/Project 0/search (web50/projects/2020/x/search)
+$ git pull origin web50/projects/2020/x/search
+From https://github.com/me50/xinpds
+ * branch            web50/projects/2020/x/search -> FETCH_HEAD
+Already up to date.
+
+
